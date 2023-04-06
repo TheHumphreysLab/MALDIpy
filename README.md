@@ -1,4 +1,4 @@
-# MALDIpy
+# MALDIpy: Single-cell analysis of MALDI-MS imaging mass spectrometry data
 `MALDIpy` is a Python package for analyzing MALDI-MS imaging mass spectrometry data at the single-cell level.
 
 Its function includes: metabolite species visualization, Scanpy-based single-cell analysis with UMAP clustering, projection of cell type annotations, integrative visualization and analysis.
