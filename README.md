@@ -57,3 +57,15 @@ https://github.com/TheHumphreysLab/MALDIpy/blob/main/vignette/kidney_integration
 (2) <a href="https://metaspace2020.eu/">METASPACE - cloud platform for spatial metabolomics</a><br>
 (3) <a href="https://scanpy.readthedocs.io/en/stable/index.html">Scanpy - Single-Cell Analysis in Python</a><br>
 (4) <a href="https://portals.broadinstitute.org/harmony/">Harmony - integrating multiple high-dimensional datasets</a><br>
+
+# 5. Citation
+
+Ongoing project
+<br><br>
+**************
+
+
+Find us on Twitter: 
+<br/>
+  <a href="https://twitter.com/HumphreysLab?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false"> @HumphreysLab</a>
+<br/><br/>
