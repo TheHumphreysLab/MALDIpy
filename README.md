@@ -32,7 +32,8 @@ maldi_obj.plt(mz=741.530654593237, figsize = (6,5), smooth=False, pos = 'lower l
 adata = maldi_obj.to_adata(add_meta=True, csv_file=raw_file)
 ```
 
-(4) Efficient single-cell quality control, dimension reduction and clustering with `single_cell`. This includes Harmony-based batch effect correction when processing multiple tissue sections.<br>
+(4) Efficient single-cell quality control, dimension reduction and clustering with `single_cell`, including `single_cell.maldifilter`, `single_cell.maldi_norm` and `single_cell.maldi_clustering`.<br>
+`single_cell.maldi_clustering` includes Harmony-based batch effect correction when processing multiple tissue sections.<br>
 <img src="https://github.com/HaikuoLi/MALDIpy/blob/master/readme_fig/plt2.png" width="300"> <br>
 
 (5) Project single-cell cluster annotation onto the tissue section with `projection`.
