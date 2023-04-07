@@ -11,7 +11,16 @@ To install `MALDIpy`, run it in a terminal
 pip install MALDIpy
 ```
 
-# 2. Key functions
+# 2. Tutorials
+
+(1) Analyze one single dataset with high efficiency -- all analysis can be done in 5-10 minutes on a labtop:
+https://github.com/TheHumphreysLab/MALDIpy/blob/main/vignette/kidney_cortex.ipynb
+
+(2) Integrative analysis of multiple MALDI-MS datasets:
+https://github.com/TheHumphreysLab/MALDIpy/blob/main/vignette/kidney_integration.ipynb
+<br>
+
+# 3. Key functions
 
 (1) Create a MALDIpy object with `msi_data`.
 
@@ -42,14 +51,6 @@ MALDIpy.projection.umap_projection(adata, file_name=raw_file,pltcmap=adata.uns['
                                    figtitle='Leiden Cluster Projection',figdpi=150, fig_size=(4,4),add_scalebar=True)
 ```
 <img src="https://github.com/HaikuoLi/MALDIpy/blob/master/readme_fig/plt3.png" width="300"> <br>
-
-# 3. Tutorials
-
-(1) Analyze one single dataset with high efficiency -- all analysis can be done in 5-10 minutes on a labtop:
-https://github.com/TheHumphreysLab/MALDIpy/blob/main/vignette/kidney_cortex.ipynb
-
-(2) Integrative analysis of multiple MALDI-MS datasets:
-https://github.com/TheHumphreysLab/MALDIpy/blob/main/vignette/kidney_integration.ipynb
 
 # 4. Related links
 
