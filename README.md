@@ -33,7 +33,7 @@ maldi_obj = msi_data(raw_file, scale=10)
 ```
 maldi_obj.plt(mz=741.530654593237, figsize = (6,5), smooth=False, pos = 'lower left', remove_hs = True, cmap = "magma_r")
 ```
-<img src="https://github.com/HaikuoLi/MALDIpy/blob/master/readme_fig/plt1.png" width="300"> <br>
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/plt1.png" width="300"> <br>
 
 (3) MALDIpy to AnnData conversion with `to_adata`.
 
@@ -43,14 +43,14 @@ adata = maldi_obj.to_adata(add_meta=True, csv_file=raw_file)
 
 (4) Efficient single-cell quality control, dimension reduction and clustering with `single_cell`, including `single_cell.maldifilter`, `single_cell.maldi_norm` and `single_cell.maldi_clustering`.<br>
 `single_cell.maldi_clustering` includes Harmony-based batch effect correction when processing multiple tissue sections.<br>
-<img src="https://github.com/HaikuoLi/MALDIpy/blob/master/readme_fig/plt2.png" width="300"><img src="https://github.com/HaikuoLi/MALDIpy/blob/master/readme_fig/plt4.png" width="450"> <br>
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/plt2.png" width="300"><img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/plt4.png" width="450"> <br>
 
 (5) Project single-cell cluster annotation onto the tissue section with `projection`.
 ```
 MALDIpy.projection.umap_projection(adata, file_name=raw_file,pltcmap=adata.uns['leiden_colors'],
                                    figtitle='Leiden Cluster Projection',figdpi=150, fig_size=(4,4),add_scalebar=True)
 ```
-<img src="https://github.com/HaikuoLi/MALDIpy/blob/master/readme_fig/plt3.png" width="300"> <br>
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/plt3.png" width="300"> <br>
 
 # 4. Related links
 
