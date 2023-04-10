@@ -68,5 +68,5 @@ Ongoing project
 
 Find us on Twitter: 
 <br/>
-  <a href="https://twitter.com/HumphreysLab?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false"> @HumphreysLab</a>
+  <a href="https://twitter.com/HumphreysLab?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@HumphreysLab</a>
 <br/><br/>
