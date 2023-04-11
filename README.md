@@ -3,6 +3,8 @@
 
 Its function includes: metabolite species visualization, Scanpy-based single-cell analysis with UMAP clustering, projection of cell type annotations, integrative visualization and analysis.
 
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/function.png" width="600"> <br>
+
 # 1. Installation
 
 To install `MALDIpy`, run it in a terminal
