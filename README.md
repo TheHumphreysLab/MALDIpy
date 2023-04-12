@@ -65,8 +65,8 @@ MALDIpy.projection.umap_projection(adata, file_name=raw_file,pltcmap=adata.uns['
 
 Ongoing project
 <br><br>
-<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/AI_paint.jpg" width="800"> <br>
-AI painting with Adobe Firefly with command `a robot analyzing tissue section metabolites with imaging mass spectrometry`.
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/AI_paint.jpg" width="650"> <br>
+Adobe Firefly AI painting with command `a robot analyzing tissue section metabolites with imaging mass spectrometry`.
 **************
 
 
