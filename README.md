@@ -81,7 +81,7 @@ fig=MALDIpy.featureplot.twofeatureplot_subset(tissue_obj=maldi_obj1,
                           max_num_1=45000, min_num_1=25000,  max_num_2=41000, min_num_2=21000, 
                           alpha = [1, 0.5], figsize = (5,2.9),subset=[95,185,35,175])
 ```
-<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot3.png" width="400"><img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot4.png" width="500"> <br>
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot3.png" width="300"><img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot4.png" width="450"> <br>
 
 
 # 4. Related links
