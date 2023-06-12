@@ -64,7 +64,7 @@ fig=MALDIpy.featureplot.plot1feature_subset(tissue_obj=maldi_obj,mz_use=float(fe
                           cmap = LinearSegmentedColormap.from_list('name',["black", "lime"], N=256), 
                               max_num=41000, min_num=21000, figsize = (5,2.9),subset=[95,185,35,175])
 ```
-<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot1.png" width="300"><img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot2.png" width="450"> <br>
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot1.png" width="250"><img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot2.png" width="450"> <br>
 
 (6.2) Plot two features at the same time with customized colormap with `twofeatureplot` and plot a region of interest with the argument `subset`.
 ```
