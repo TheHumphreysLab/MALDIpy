@@ -57,23 +57,22 @@ MALDIpy.projection.umap_projection(adata, file_name=raw_file,pltcmap=adata.uns['
 (6) Core plotting functions included in `featureplot`.<br>
 (6.1) Plot a feature with customized colormap with `plot1feature` and plot a region of interest with the argument `subset`.
 ```
-fig=MALDIpy.featureplot.plot1feature(tissue_obj, cmap = LinearSegmentedColormap.from_list('name',["black", "lime"], N=256), 
-                              max_num=41000, min_num=21000, figsize = (4.5,5))
-fig=MALDIpy.featureplot.plot1feature_subset(tissue_obj,mz_use,cmap = LinearSegmentedColormap.from_list('name',["black", "lime"], N=256), 
-                              max_num=41000, min_num=21000, figsize = (5,2.9),subset=[95,185,35,175])
+cmap_1 = mcolors.LinearSegmentedColormap.from_list('name1',["black", "lime"], N=256)
+fig=MALDIpy.featureplot.plot1feature(tissue_obj, cmap = cmap_1, max_num=41000, min_num=21000, figsize = (4.5,5))
+fig=MALDIpy.featureplot.plot1feature_subset(tissue_obj,mz_use,cmap = cmap_1, max_num=41000, min_num=21000, figsize = (5,2.9),subset=[95,185,35,175])
 ```
-<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot1.png" width="200"><img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot2.png" width="350"> <br>
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot1.png" width="200">            <img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot2.png" width="350"> <br>
 
-(6.2) Plot two features at the same time with customized colormap with `twofeatureplot` and plot a region of interest with the argument `subset`.
+(6.2) Plot two features at the same time with customized colormap with `plot2features` and plot a region of interest with the argument `subset`.
 ```
-fig=MALDIpy.featureplot.twofeatureplot(tissue_obj, [float(mz_use1), float(mz_use2)],
-                          cmap=[mcolors.LinearSegmentedColormap.from_list('reds',["black", "magenta"], N=256),mcolors.LinearSegmentedColormap.from_list('greens',["black", "lime"], N=256)], 
-                          max_num_1=45000, min_num_1=25000, max_num_2=41000, min_num_2=21000, alpha = [1, 0.5],figsize = (5.5,5))
-fig=MALDIpy.featureplot.twofeatureplot_subset(tissue_obj,[float(mz_use1), float(mz_use2)],
-                          cmap=[mcolors.LinearSegmentedColormap.from_list('reds',["black", "magenta"], N=256),mcolors.LinearSegmentedColormap.from_list('greens',["black", "lime"], N=256)], 
-                          max_num_1=45000, min_num_1=25000,  max_num_2=41000, min_num_2=21000, alpha = [1, 0.5], figsize = (5,2.9),subset=[95,185,35,175])
+cmap_1 = mcolors.LinearSegmentedColormap.from_list('name1',["black", "lime"], N=256)
+cmap_2 = mcolors.LinearSegmentedColormap.from_list('name2',["black", "magenta"], N=256) 
+fig=MALDIpy.featureplot.plot2features(tissue_obj, feats = [mz_use1,mz_use2], cmap=[cmap_1,cmap_2],
+                          max_num_1=41000, min_num_1=21000, max_num_2=50000, min_num_2=25000)
+fig=MALDIpy.featureplot.plot2features_subset(tissue_obj, feats = [mz_use1,mz_use2], cmap=[cmap_1,cmap_2],
+                          max_num_1=41000, min_num_1=21000, max_num_2=50000, min_num_2=25000, subset=[95,185,35,175])
 ```
-<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot3.png" width="300"><img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot4.png" width="450"> <br>
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot3.png" width="200">            <img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot4.png" width="350"> <br>
 
 
 # 4. Related links
