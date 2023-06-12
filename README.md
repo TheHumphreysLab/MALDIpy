@@ -54,6 +54,38 @@ MALDIpy.projection.umap_projection(adata, file_name=raw_file,pltcmap=adata.uns['
 ```
 <img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/plt3.png" width="300"> <br>
 
+(6) Core plotting functions included in `featureplot`.<br>
+(6.1)Plot a feature with customized colormap with `plot1feature` and plot a region of interest with the argument `subset`.
+```
+fig=MALDIpy.featureplot.plot1feature(tissue_obj=maldi_obj,mz_use=float(feature),
+                          cmap = LinearSegmentedColormap.from_list('name',["black", "lime"], N=256), 
+                              max_num=41000, min_num=21000, figsize = (4.5,5))
+fig=MALDIpy.featureplot.plot1feature_subset(tissue_obj=maldi_obj,mz_use=float(feature),
+                          cmap = LinearSegmentedColormap.from_list('name',["black", "lime"], N=256), 
+                              max_num=41000, min_num=21000, figsize = (5,2.9),subset=[95,185,35,175])
+```
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot1.png" width="300">
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot2.png" width="300"> <br>
+
+(6.2)Plot two features at the same time with customized colormap with `twofeatureplot` and plot a region of interest with the argument `subset`.
+```
+fig=MALDIpy.featureplot.twofeatureplot(tissue_obj=maldi_obj1,
+                          mz_use=[float(feature2), float(feature1)],
+                          cmap=[mcolors.LinearSegmentedColormap.from_list('reds',["black", "magenta"], N=256),
+                                mcolors.LinearSegmentedColormap.from_list('greens',["black", "lime"], N=256)], 
+                          max_num_1=45000, min_num_1=25000, max_num_2=41000, min_num_2=21000, 
+                          alpha = [1, 0.5],figsize = (5.5,5))
+fig=MALDIpy.featureplot.twofeatureplot_subset(tissue_obj=maldi_obj1,
+                          mz_use=[float(feature2), float(feature1)],
+                          cmap=[mcolors.LinearSegmentedColormap.from_list('reds',["black", "magenta"], N=256),
+                                mcolors.LinearSegmentedColormap.from_list('greens',["black", "lime"], N=256)], 
+                          max_num_1=45000, min_num_1=25000,  max_num_2=41000, min_num_2=21000, 
+                          alpha = [1, 0.5], figsize = (5,2.9),subset=[95,185,35,175])
+```
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot3.png" width="300">
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot4.png" width="300"> <br>
+
+
 # 4. Related links
 
 (1) <a href="https://en.wikibooks.org/wiki/Metabolomics/Analytical_Methods/Mass_Spectrometry/MALDI-MS">MALDI-MS (Matrix-assisted laser desorption/ionization mass spectrometry)</a><br>
