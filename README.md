@@ -74,6 +74,18 @@ fig=MALDIpy.featureplot.plot2features_subset(tissue_obj, feats = [mz_use1,mz_use
 ```
 <img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot3.png" width="200">            <img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/featureplot4.png" width="350"> <br>
 
+(7) Project your cell cluster of interest onto a group of tissue sections with `projection.project_cluster_in_groups`.<br>
+First, extract X/Y coordinates from the anndata and add them to adata.obs with `projection.add_coords`
+```
+adata = MALDIpy.projection.add_coords(adata)
+```
+Then, visualize the cluster of interest across multiple samples.
+```
+group=['sample1','sample2','sample3','sample4','sample5','sample6']
+fig = MALDIpy.projection.project_cluster_in_groups(adata, cluster_id='1', cluster_obs_name='leiden', 
+                                group_list=group, group_obs_name='sample_id', cmap='Reds')
+```
+<img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/project_cluster_in_groups.png" width="1000"> <br>
 
 # 4. Related links
 
