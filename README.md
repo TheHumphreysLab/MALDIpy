@@ -96,7 +96,17 @@ fig = MALDIpy.projection.project_cluster_in_groups(adata, cluster_id='1', cluste
 
 # 5. Citation
 
-Ongoing project
+We recommend cite the following two related manuscripts for the use of MALDIpy:<br><br>
+Cell Metabolism 2024 (PMID: 38513647):
+```
+Li, Haikuo, et al. "Transcriptomic, epigenomic, and spatial metabolomic cell profiling redefines regional human kidney anatomy." Cell metabolism 36.5 (2024): 1105-1125.
+```
+Data in Brief 2024 (PMID: 38708307):
+```
+Li, Haikuo, and Benjamin D. Humphreys. "Spatially resolved metabolomic dataset of distinct human kidney anatomic regions." Data in Brief 54 (2024): 110431.
+```
+
+
 <br><br>
 <img src="https://github.com/TheHumphreysLab/MALDIpy/blob/main/readme_fig/AI_paint.jpg" width="500"> <br>
 Adobe Firefly AI painting with command `a robot analyzing tissue section metabolites with imaging mass spectrometry`.
